@@ -16,8 +16,9 @@ function getSlot() {
 }
 
 function removeSlot() {
-    if (document.getElementById('slot')) {
-        document.getElementById('slot').remove();
+    const slot = getSlot();
+    if (slot) {
+        slot.remove();
     }
 }
 
@@ -30,7 +31,7 @@ function dragStart (event) {
 
 function listDragOver (event) {
     event.preventDefault();
-    if (!document.getElementById('slot')) {
+    if (!getSlot()) {
         const listA = getListA();
         const slot = createSlot();
         listA.appendChild(slot);
