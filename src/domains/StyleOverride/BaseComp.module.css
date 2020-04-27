@@ -1,0 +1,13 @@
+.panel {
+    border-style: solid;
+    border-color: blueviolet;
+}
+
+.text {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.option {
+    background-color: #61dafb;
+}

@@ -1,0 +1,51 @@
+.list-size {
+    width: 100%;
+    min-height: 120px;
+}
+
+.list-a {
+    border: lightseagreen solid;
+}
+
+.list-b {
+    border: deeppink solid;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.middle {
+    align-content: center;
+}
+
+.panel {
+    padding: 0 20%;
+}
+
+h2 {
+    font-family: Arial;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h3 {
+    font-family: Arial;
+}
+
+.slot {
+    background: lightseagreen;
+    opacity: 20%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.move {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}

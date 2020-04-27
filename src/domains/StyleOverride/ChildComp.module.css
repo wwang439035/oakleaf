@@ -1,0 +1,13 @@
+.panel {
+    border-style: dashed;
+    border-color: blueviolet;
+}
+
+.text {
+    font-weight: bold;
+    color: deeppink;
+}
+
+.option {
+    background-color: darkorange;
+}
