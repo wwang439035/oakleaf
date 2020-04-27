@@ -43,6 +43,10 @@ h3 {
     margin: 10px;
 }
 
+.block-hide{
+    display: none;
+}
+
 .move {
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
