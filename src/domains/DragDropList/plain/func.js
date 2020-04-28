@@ -84,11 +84,9 @@ function iconDragEnter(event) {
     event.preventDefault();
     const target = event.target;
     const listA = getListA();
-    console.log("enter");
     if (target.parentElement.id === 'list_a') {
         addSlotRemoveStyle();
         const slot = getSlot();
-        console.log(slot);
         if (!slot || slot.nextSibling !== target) {
             const slot = createSlot();
             listA.insertBefore(slot, target);
