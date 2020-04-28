@@ -1,4 +1,6 @@
-// Utilities
+//----------------------------------
+//  Utility
+//----------------------------------
 function isOverIconArea(event) {
     const gutters = [[0, 0], [0, 15], [0, -15], [20, 0], [20, 15], [20, -15]];
     for (let i = 0; i < gutters.length; i++) {
@@ -10,7 +12,10 @@ function isOverIconArea(event) {
     return false;
 }
 
-// Slot Functions
+
+//----------------------------------
+//  Slot Functions
+//----------------------------------
 function getSlot(event) {
     return (event && event.target.id === 'slot' &&  event.target) || document.getElementById("slot");
 }
@@ -25,16 +30,16 @@ function createSlot(isLast = false) {
     return slot;
 }
 
+function addSlotRemoveStyle(slot) {
+    slot = slot || getSlot();
+    slot && slot.classList.add("slot-hide");
+}
+
 function removeSlot(event) {
     const slot = getSlot(event);
     if (slot) {
         slot.remove();
     }
-}
-
-function addSlotRemoveStyle(slot) {
-    slot = slot || getSlot();
-    slot && slot.classList.add("slot-hide");
 }
 
 function slotTransitionEnd(event) {
@@ -56,7 +61,9 @@ function slotDrop(event) {
 }
 
 
-// Icon Functions
+//----------------------------------
+//  Icon Functions
+//----------------------------------
 function iconMoveBack(event) {
     const element = event.target;
     if (element.parentElement.id === "list_a") {
@@ -95,8 +102,9 @@ function iconDragEnd(event) {
 }
 
 
-
-// List Functions
+//----------------------------------
+//  List Functions
+//----------------------------------
 function getListA() {
     return document.getElementById("list_a");
 }
@@ -123,7 +131,9 @@ function listDragLeave(event) {
 }
 
 
-// Load Event Handlers
+//----------------------------------
+//  Load Event Handlers
+//----------------------------------
 window.onload = function () {
     const list = document.getElementById('list_a');
     list.addEventListener("dragover", listDragOver);
