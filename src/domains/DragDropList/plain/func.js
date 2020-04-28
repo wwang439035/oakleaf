@@ -1,3 +1,6 @@
+let prePageX;
+let direction;
+
 function getListA() {
     return document.getElementById("list_a");
 }
@@ -12,7 +15,7 @@ function createSlot(isLast = false) {
 }
 
 function getSlot(event) {
-    return event && event.target || document.getElementById("slot");
+    return (event && event.target.id === 'slot' &&  event.target) || document.getElementById("slot");
 }
 
 function removeSlot(event) {
@@ -42,13 +45,14 @@ function iconDragStart (event) {
 
 function listDragOver (event) {
     event.preventDefault();
+    direction = event.pageX - prePageX;
+    prePageX = event.pageX;
     const isOverIcons = isOverIconArea(event);
     const slot = getSlot();
     if (slot && slot.getAttribute("isLast") === "false" && !isOverIcons) {
         removeSlot();
     }
     if (!getSlot() && !isOverIcons) {
-        console.log("listDragOver");
         const listA = getListA();
         const slot = createSlot(true);
         listA.appendChild(slot);
@@ -83,15 +87,15 @@ function slotDrop(event) {
 function iconDragEnter(event) {
     event.preventDefault();
     const target = event.target;
-    const slot = getSlot();
-    if (slot && slot.nextSibling && slot.nextSibling.isSameNode(target)) {
-        return;
-    }
     const listA = getListA();
     if (target.parentElement.id === 'list_a') {
         removeSlot();
         const slot = createSlot();
-        listA.insertBefore(slot, target);
+        if (direction > 0) {
+            listA.insertBefore(slot, target.nextSibling);
+        } else {
+            listA.insertBefore(slot, target);
+        }
     }
 }
 
