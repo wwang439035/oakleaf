@@ -41,15 +41,21 @@ h3 {
     width: 100px;
     height: 100px;
     margin: 10px;
+    animation-name: show;
+    animation-duration: 500ms;
 }
 
 .block-hide{
     display: none;
 }
 
-.move {
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+@keyframes show {
+    from {
+        width: 0px;
+        height: 100px;
+    }
+    to {
+        width: 100px;
+        height: 100px;
+    }
 }
