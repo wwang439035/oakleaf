@@ -1,9 +1,371 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ee4c360-4adc-40e7-aaec-61cbb65a04e9" name="Default Changelist" comment="drag and drop element updates">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="react_slot" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ajRCuJybHUHmXKYxpkk4oTGssZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/domains/DragAndDrop" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/domains/DragAndDrop" />
+      <recent name="$PROJECT_DIR$/src/domains/StyleOverride" />
+      <recent name="$PROJECT_DIR$/resources/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/domains/DragDropList/plain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.dragdropcomponent.html">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="dragdropcomponent.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/oakleaf/src/domains/DragDropList/plain/dragdropcomponent.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.npm start" />
+      <item itemvalue="JavaScript Debug.dragdropcomponent.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.dragdropcomponent.html" />
+        <item itemvalue="JavaScript Debug.dragdropcomponent.html" />
+        <item itemvalue="JavaScript Debug.dragdropcomponent.html" />
+        <item itemvalue="JavaScript Debug.dragdropcomponent.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ee4c360-4adc-40e7-aaec-61cbb65a04e9" name="Default Changelist" comment="" />
+      <created>1587246892918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587246892918</updated>
+      <workItem from="1587246895996" duration="10460000" />
+      <workItem from="1587364409845" duration="90000" />
+      <workItem from="1587364523461" duration="14000" />
+      <workItem from="1587924382480" duration="25051000" />
+      <workItem from="1588005641456" duration="16545000" />
+      <workItem from="1588093928562" duration="39939000" />
+    </task>
+    <task id="LOCAL-00001" summary="drag and drop element updates">
+      <created>1587977137066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587977137066</updated>
+    </task>
+    <task id="LOCAL-00002" summary="drag and drop element updates">
+      <created>1587977317353</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587977317353</updated>
+    </task>
+    <task id="LOCAL-00003" summary="drag and drop element updates">
+      <created>1587977478357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587977478357</updated>
+    </task>
+    <task id="LOCAL-00004" summary="drag and drop element updates">
+      <created>1588033353060</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588033353060</updated>
+    </task>
+    <task id="LOCAL-00005" summary="drag and drop element updates">
+      <created>1588039211452</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588039211452</updated>
+    </task>
+    <task id="LOCAL-00006" summary="drag and drop element updates">
+      <created>1588107949494</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588107949494</updated>
+    </task>
+    <task id="LOCAL-00007" summary="drag and drop element updates">
+      <created>1588108103650</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588108103650</updated>
+    </task>
+    <task id="LOCAL-00008" summary="drag and drop element updates">
+      <created>1588108172870</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588108172870</updated>
+    </task>
+    <task id="LOCAL-00009" summary="drag and drop element updates">
+      <created>1588119966094</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588119966094</updated>
+    </task>
+    <task id="LOCAL-00010" summary="drag and drop element updates">
+      <created>1588120777637</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588120777637</updated>
+    </task>
+    <task id="LOCAL-00011" summary="drag and drop element updates">
+      <created>1588120865387</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588120865387</updated>
+    </task>
+    <task id="LOCAL-00012" summary="drag and drop element updates">
+      <created>1588121122514</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588121122514</updated>
+    </task>
+    <task id="LOCAL-00013" summary="drag and drop element updates">
+      <created>1588122265023</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588122265023</updated>
+    </task>
+    <task id="LOCAL-00014" summary="drag and drop element updates">
+      <created>1588140338847</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588140338847</updated>
+    </task>
+    <task id="LOCAL-00015" summary="drag and drop element updates">
+      <created>1588144016452</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1588144016452</updated>
+    </task>
+    <task id="LOCAL-00016" summary="drag and drop element updates">
+      <created>1588144055197</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588144055197</updated>
+    </task>
+    <task id="LOCAL-00017" summary="drag and drop element updates">
+      <created>1588145808031</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1588145808031</updated>
+    </task>
+    <task id="LOCAL-00018" summary="drag and drop element updates">
+      <created>1588146609624</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1588146609624</updated>
+    </task>
+    <task id="LOCAL-00019" summary="drag and drop element updates">
+      <created>1588146909160</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1588146909160</updated>
+    </task>
+    <task id="LOCAL-00020" summary="drag and drop element updates">
+      <created>1588147068256</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1588147068256</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
+    <MESSAGE value="drag and drop element updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="drag and drop element updates" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="360" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587257631810">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="360" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587257631810" />
+    <state x="-1241" y="104" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588124481753">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
+    </state>
+    <state x="-1241" y="104" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588124481753" />
+    <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587929871460" />
+    <state x="-1383" y="-87" key="CommitChangelistDialog2" timestamp="1588147068141">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
+    </state>
+    <state x="-1383" y="-87" key="CommitChangelistDialog2/-1920.-199.1920.1080/-3840.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588039211338" />
+    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588146609481" />
+    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147068141" />
+    <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1587977136785" />
+    <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.23.1920.1057/-1920.0.1920.1080/0.23.1792.1097@-1920.0.1920.1080" timestamp="1587977478232" />
+    <state width="686" height="466" key="DebuggerActiveHint" timestamp="1587258173747">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="686" height="466" key="DebuggerActiveHint/0.0.1792.1120@0.0.1792.1120" timestamp="1587258173747" />
+    <state x="-1087" y="245" key="Github.ShareDialog" timestamp="1588147142851">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
+    </state>
+    <state x="-1087" y="245" key="Github.ShareDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147142851" />
+    <state width="1771" height="382" key="GridCell.Tab.0.bottom" timestamp="1587258537306">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537306" />
+    <state width="1771" height="382" key="GridCell.Tab.0.center" timestamp="1587258537305">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537305" />
+    <state width="1771" height="382" key="GridCell.Tab.0.left" timestamp="1587258537305">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537305" />
+    <state width="1771" height="382" key="GridCell.Tab.0.right" timestamp="1587258537306">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537306" />
+    <state width="1771" height="382" key="GridCell.Tab.1.bottom" timestamp="1587258537307">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537307" />
+    <state width="1771" height="382" key="GridCell.Tab.1.bottom/0.23.1792.1011@0.23.1792.1011" timestamp="1587257645321" />
+    <state width="1771" height="382" key="GridCell.Tab.1.center" timestamp="1587258537307">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537307" />
+    <state width="1771" height="382" key="GridCell.Tab.1.center/0.23.1792.1011@0.23.1792.1011" timestamp="1587257645319" />
+    <state width="1771" height="382" key="GridCell.Tab.1.left" timestamp="1587258537306">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537306" />
+    <state width="1771" height="382" key="GridCell.Tab.1.left/0.23.1792.1011@0.23.1792.1011" timestamp="1587257645318" />
+    <state width="1771" height="382" key="GridCell.Tab.1.right" timestamp="1587258537307">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537307" />
+    <state width="1771" height="382" key="GridCell.Tab.1.right/0.23.1792.1011@0.23.1792.1011" timestamp="1587257645319" />
+    <state width="1771" height="382" key="GridCell.Tab.2.bottom" timestamp="1587258537309">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.2.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537309" />
+    <state width="1771" height="382" key="GridCell.Tab.2.center" timestamp="1587258537308">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.2.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537308" />
+    <state width="1771" height="382" key="GridCell.Tab.2.left" timestamp="1587258537308">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.2.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537308" />
+    <state width="1771" height="382" key="GridCell.Tab.2.right" timestamp="1587258537308">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.2.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537308" />
+    <state width="1771" height="382" key="GridCell.Tab.3.bottom" timestamp="1587257129772">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.3.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587257129772" />
+    <state width="1771" height="382" key="GridCell.Tab.3.center" timestamp="1587257129772">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.3.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587257129772" />
+    <state width="1771" height="382" key="GridCell.Tab.3.left" timestamp="1587257129771">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.3.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587257129771" />
+    <state width="1771" height="382" key="GridCell.Tab.3.right" timestamp="1587257129772">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="382" key="GridCell.Tab.3.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587257129772" />
+    <state x="-1174" y="50" key="RollbackChangesDialog" timestamp="1588107945412">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
+    </state>
+    <state x="-1174" y="50" key="RollbackChangesDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588107945412" />
+    <state x="397" y="199" key="SettingsEditor" timestamp="1587247084224">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1587247084224" />
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2" timestamp="1588147097730">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
+    </state>
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147097730" />
   </component>
 </project>
