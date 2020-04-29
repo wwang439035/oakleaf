@@ -20,7 +20,7 @@ function App() {
                                 <Link to="/DragAndDrop">Drag And Drop</Link>
                             </li>
                             <li>
-                                <Link to="/styleOverride">Base Component Style Override</Link>
+                                <Link to="/styleOverride">Base Component Style & Render Override</Link>
                             </li>
                         </ul>
                     </nav>
