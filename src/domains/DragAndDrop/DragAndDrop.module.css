@@ -1,0 +1,76 @@
+.listSize {
+    width: 100%;
+    min-height: 120px;
+}
+
+.listA {
+    border: lightseagreen solid;
+}
+
+.listB {
+    border: deeppink solid;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.middle {
+    align-content: center;
+}
+
+.panel {
+    padding: 0 20%;
+}
+
+h2 {
+    font-family: Arial, serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h3 {
+    font-family: Arial, fantasy;
+}
+
+.slot {
+    background: lightseagreen;
+    opacity: 20%;
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 10px 20px;
+    animation-name: show;
+    animation-duration: 500ms;
+}
+
+.slotHide {
+    width: 0;
+    opacity: 0;
+    margin-left: 0;
+    transition: width .5s, opacity .1s;
+}
+
+.blockHide{
+    display: none;
+}
+
+@keyframes show {
+    0% {
+        width: 0;
+        height: 100px;
+        opacity: 0;
+    }
+    70% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        opacity: 20%;
+    }
+}

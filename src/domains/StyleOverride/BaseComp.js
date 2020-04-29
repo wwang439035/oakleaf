@@ -34,7 +34,7 @@ export default class BaseComp extends Component {
         } = this.props;
         const selfStyles = this.getSelfStyles();
         return (
-            <div className={ selfStyles.panel }>
+            <div className={ customStyle || selfStyles.panel }>
                 { this.renderValue() }
                 <div className={ selfStyles.text }>
                     Hello World!
