@@ -84,7 +84,6 @@ export function iconDragEnter(event) {
     const target = event.target;
     const listA = getListA();
     const currentSlot = getSlot();
-    console.log(currentSlot);
     if (target.parentElement.id === 'list_a') {
         if (currentSlot && currentSlot.getAttribute("iconId") === target.id) {
             return;
