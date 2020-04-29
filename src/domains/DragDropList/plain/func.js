@@ -13,7 +13,16 @@ function createSlot(iconId, isLast = false) {
     slot.setAttribute("isLast", isLast.toString());
     slot.addEventListener("drop", slotDrop);
     slot.addEventListener("transitionend", slotTransitionEnd);
+    getMessage(slot);
     return slot;
+}
+
+function getMessage(slot) {
+    return JSON.stringify({
+        class: slot.className,
+        iconId: slot.getAttribute("iconId"),
+        isLast: slot.getAttribute("isLast")
+    });
 }
 
 function addSlotRemoveStyle(slot) {
@@ -64,14 +73,6 @@ function iconDragStart(event) {
     setTimeout(function () {
         event.target.classList.add('block-hide');
     }, 0);
-}
-
-function getMessage(currentSlot) {
-    return JSON.stringify({
-        class: currentSlot.className,
-        iconId: currentSlot.getAttribute("iconId"),
-        isLast: currentSlot.getAttribute("isLast")
-    });
 }
 
 function iconDragEnter(event) {
