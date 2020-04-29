@@ -58,7 +58,7 @@ export default class DragAndDrop extends Component {
                     />
                     <br/>
                     <h3>Drag From</h3>
-                    <div id="list_b" className={ classNames({[styles.listSize]: true, [styles.listA]: true }) }>
+                    <div id="list_b" className={ classNames({[styles.listSize]: true, [styles.listB]: true }) }>
                         { this.renderIcons() }
                     </div>
                 </div>

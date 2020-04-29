@@ -26,16 +26,6 @@
     padding: 0 20%;
 }
 
-h2 {
-    font-family: Arial, serif;
-    text-align: center;
-    padding-top: 50px;
-}
-
-h3 {
-    font-family: Arial, fantasy;
-}
-
 .slot {
     background: lightseagreen;
     opacity: 20%;

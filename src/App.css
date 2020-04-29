@@ -1,3 +1,9 @@
-.App {
+h2 {
+  font-family: Arial, serif;
   text-align: center;
+  padding-top: 50px;
+}
+
+h3 {
+  font-family: Arial, fantasy;
 }

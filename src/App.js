@@ -6,7 +6,8 @@ import {
     Link
 } from 'react-router-dom';
 import DragAndDrop from "./domains/DragAndDrop/DragAndDrop";
-import StyleOverride from "./domains/StyleOverride/StyleOverride.js";
+import StyleRenderOverride from "./domains/StyleRenderOverride/StyleRenderOverride.js";
+import "./App.css";
 
 function App() {
     return (
@@ -29,7 +30,7 @@ function App() {
                         <DragAndDrop/>
                     </Route>
                     <Route path={"/styleOverride"}>
-                        <StyleOverride/>
+                        <StyleRenderOverride/>
                     </Route>
                 </Switch>
             </div>
