@@ -76,21 +76,16 @@ function getMessage(currentSlot) {
 
 function iconDragEnter(event) {
     event.preventDefault();
-    console.log("[[enter]]");
     const target = event.target;
     const listA = getListA();
     const currentSlot = getSlot();
     if (target.parentElement.id === 'list_a') {
-        console.log(currentSlot && getMessage(currentSlot));
-        console.log(target.id);
         if (currentSlot && currentSlot.getAttribute("iconId") === target.id) {
             return;
         }
         if (currentSlot) {
-            console.log("remove");
             addSlotRemoveStyle(currentSlot);
         }
-        console.log("create");
         const slot = createSlot(target.id);
         listA.insertBefore(slot, target);
     }
@@ -98,7 +93,6 @@ function iconDragEnter(event) {
 
 function iconDragEnd(event) {
     event.target.classList.remove('block-hide');
-    console.log("iconDragEnd remove");
     addSlotRemoveStyle();
 }
 
@@ -126,7 +120,6 @@ function listDragOver(event) {
     const isOverIcons = isOverIconArea(event);
     const currentSlot = getSlot();
     if (currentSlot && currentSlot.getAttribute("isLast") === "false" && !isOverIcons) {
-        console.log("listDragOver remove");
         addSlotRemoveStyle();
     }
     if (!currentSlot && !isOverIcons) {
@@ -139,7 +132,6 @@ function listDragOver(event) {
 function listDragLeave(event) {
     const element = document.elementFromPoint(event.pageX, event.pageY);
     if (!element || (element.id !== "list_a" && (!element.parentElement || element.parentElement.id !== "list_a"))) {
-        console.log("listDragLeave remove");
         addSlotRemoveStyle();
     }
 }

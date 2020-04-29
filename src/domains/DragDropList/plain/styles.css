@@ -50,7 +50,7 @@ h3 {
     width: 0;
     opacity: 0;
     margin-left: 0;
-    transition: width .5s, opacity .1s, margin-left .5s;
+    transition: width .5s, opacity .1s;
 }
 
 .block-hide{
