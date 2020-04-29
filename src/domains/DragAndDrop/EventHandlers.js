@@ -55,7 +55,10 @@ function slotDrop(event) {
     const icon = document.getElementById(elementId);
     icon.setAttribute("location", "list_a");
     icon.classList.remove('block-hide');
-    listA.replaceChild(icon, target);
+    listA.insertBefore(icon, target);
+    setTimeout(function () {
+        listA.removeChild(target);
+    }, 0);
 }
 
 
