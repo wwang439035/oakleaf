@@ -50,7 +50,7 @@ export default class DragAndDrop extends Component {
                 <h2 className="font middle">Drag and Drop Component Demo</h2>
                 <br/>
                 <div className={ styles.panel }>
-                    <h3>Drag To</h3>
+                    <h3>Drop To</h3>
                     <div id="list_a"
                          className={ `${styles.listSize} ${styles.listA}` }
                          onDragOver={ listDragOver }
