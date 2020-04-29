@@ -1,29 +1,15 @@
 //----------------------------------
-//  Utility
-//----------------------------------
-function isOverIconArea(event) {
-    const gutters = [[0, 0], [0, 15], [0, -15], [20, 0], [20, 15], [20, -15]];
-    for (let i = 0; i < gutters.length; i++) {
-        const element = document.elementFromPoint(event.pageX + gutters[i][0], event.pageY + gutters[i][1]);
-        if (element.tagName === "IMG") {
-            return true;
-        }
-    }
-    return false;
-}
-
-
-//----------------------------------
 //  Slot Functions
 //----------------------------------
-function getSlot(event) {
-    return (event && event.target.id === 'slot' &&  event.target) || document.getElementById("slot");
+function getSlot(isCurrent = true) {
+    const className = isCurrent ? "slot" : "slot-hide";
+    return document.getElementsByClassName(className)[0];
 }
 
-function createSlot(isLast = false) {
+function createSlot(iconId, isLast = false) {
     const slot = document.createElement("img");
-    slot.setAttribute("id", "slot");
     slot.setAttribute("class", "slot");
+    slot.setAttribute("iconId", iconId);
     slot.setAttribute("isLast", isLast.toString());
     slot.addEventListener("drop", slotDrop);
     slot.addEventListener("transitionend", slotTransitionEnd);
@@ -32,11 +18,11 @@ function createSlot(isLast = false) {
 
 function addSlotRemoveStyle(slot) {
     slot = slot || getSlot();
-    slot && slot.classList.add("slot-hide");
+    slot && slot.classList.replace("slot", "slot-hide");
 }
 
 function removeSlot(event) {
-    const slot = getSlot(event);
+    const slot = event.target;
     if (slot) {
         slot.remove();
     }
@@ -73,29 +59,46 @@ function iconMoveBack(event) {
     }
 }
 
-function iconDragStart (event) {
+function iconDragStart(event) {
     event.dataTransfer.setData("text", event.target.id);
-    setTimeout(function(){
+    setTimeout(function () {
         event.target.classList.add('block-hide');
-    },0);
+    }, 0);
+}
+
+function getMessage(currentSlot) {
+    return JSON.stringify({
+        class: currentSlot.className,
+        iconId: currentSlot.getAttribute("iconId"),
+        isLast: currentSlot.getAttribute("isLast")
+    });
 }
 
 function iconDragEnter(event) {
     event.preventDefault();
+    console.log("[[enter]]");
     const target = event.target;
     const listA = getListA();
+    const currentSlot = getSlot();
     if (target.parentElement.id === 'list_a') {
-        addSlotRemoveStyle();
-        const slot = getSlot();
-        if (!slot || slot.nextSibling !== target) {
-            const slot = createSlot();
-            listA.insertBefore(slot, target);
+        console.log(currentSlot && getMessage(currentSlot));
+        console.log(target.id);
+        if (currentSlot && currentSlot.getAttribute("iconId") === target.id) {
+            return;
         }
+        if (currentSlot) {
+            console.log("remove");
+            addSlotRemoveStyle(currentSlot);
+        }
+        console.log("create");
+        const slot = createSlot(target.id);
+        listA.insertBefore(slot, target);
     }
 }
 
 function iconDragEnd(event) {
     event.target.classList.remove('block-hide');
+    console.log("iconDragEnd remove");
     addSlotRemoveStyle();
 }
 
@@ -107,16 +110,28 @@ function getListA() {
     return document.getElementById("list_a");
 }
 
-function listDragOver (event) {
+function isOverIconArea(event) {
+    const gutters = [[0, 0], [0, 20], [0, -20], [20, 0], [20, 20], [20, -20]];
+    for (let i = 0; i < gutters.length; i++) {
+        const element = document.elementFromPoint(event.pageX + gutters[i][0], event.pageY + gutters[i][1]);
+        if (element.tagName === "IMG") {
+            return true;
+        }
+    }
+    return false;
+}
+
+function listDragOver(event) {
     event.preventDefault();
     const isOverIcons = isOverIconArea(event);
-    const slot = getSlot();
-    if (slot && slot.getAttribute("isLast") === "false" && !isOverIcons) {
+    const currentSlot = getSlot();
+    if (currentSlot && currentSlot.getAttribute("isLast") === "false" && !isOverIcons) {
+        console.log("listDragOver remove");
         addSlotRemoveStyle();
     }
-    if (!getSlot() && !isOverIcons) {
+    if (!currentSlot && !isOverIcons) {
         const listA = getListA();
-        const slot = createSlot(true);
+        const slot = createSlot("", true);
         listA.appendChild(slot);
     }
 }
@@ -124,6 +139,7 @@ function listDragOver (event) {
 function listDragLeave(event) {
     const element = document.elementFromPoint(event.pageX, event.pageY);
     if (!element || (element.id !== "list_a" && (!element.parentElement || element.parentElement.id !== "list_a"))) {
+        console.log("listDragLeave remove");
         addSlotRemoveStyle();
     }
 }
