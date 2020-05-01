@@ -19,25 +19,26 @@ export default class CardList extends Component {
         return (items || []).map((item) => (
             <div className={classNames({
                 [styles.basicCardItem]: item.type === TYPE_BASIC,
-                [styles.advancedCardItem]: item.type === TYPE_ADVANCED})}
-                key={item.id}
-                draggable={true}
-                >
+                [styles.advancedCardItem]: item.type === TYPE_ADVANCED
+            })}
+                 key={item.id}
+                 draggable={true}
+            >
                 <div className={styles.cardItemName}>
-            {item.name}
+                    {item.name}
                 </div>
                 <div className={styles.cardItemBody}>
-                {`Type: ${item.type}`}
+                    {`Type: ${item.type}`}
                 </div>
-                </div>
-                ));
-                }
+            </div>
+        ));
+    }
 
-                render() {
-                return (
-                <div className={styles.container}>
+    render() {
+        return (
+            <div className={styles.container}>
                 {this.renderItems()}
-                </div>
-                )
-                }
-                }
+            </div>
+        )
+    }
+}

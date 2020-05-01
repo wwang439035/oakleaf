@@ -5,10 +5,6 @@ import {cardItems} from "../constants";
 import styles from './DragAndDrop.module.sass'
 
 export default class DragAndDrop extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>

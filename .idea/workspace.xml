@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ee4c360-4adc-40e7-aaec-61cbb65a04e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DndFactory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Card.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardDropZone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardDropZone.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/ComplexCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/ComplexCard.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Connector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/DragAndDrop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/DragAndDrop.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/PlainDragAndDrop/PlainDragAndDrop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/PlainDragAndDrop/PlainDragAndDrop.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/EventHandlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/PlainDragAndDrop/EventHandlers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/DragAndDrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/DragAndDrop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +115,7 @@
       <workItem from="1588093928562" duration="40331000" />
       <workItem from="1588186179990" duration="6447000" />
       <workItem from="1588268796187" duration="784000" />
-      <workItem from="1588273183329" duration="19701000" />
+      <workItem from="1588273183329" duration="21097000" />
     </task>
     <task id="LOCAL-00001" summary="drag and drop element updates">
       <created>1587977137066</created>
@@ -288,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588148043561</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Create react dnd">
+      <created>1588315542996</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1588315542996</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +288,8 @@
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="drag and drop element updates" />
     <MESSAGE value="Modified README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified README.md" />
+    <MESSAGE value="Create react dnd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create react dnd" />
   </component>
   <component name="WindowStateProjectService">
     <state x="360" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587257631810">
@@ -310,12 +301,12 @@
     </state>
     <state x="-1241" y="104" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588124481753" />
     <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587929871460" />
-    <state x="-1383" y="-87" key="CommitChangelistDialog2" timestamp="1588148043455">
+    <state x="-1383" y="-87" key="CommitChangelistDialog2" timestamp="1588315542819">
       <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1383" y="-87" key="CommitChangelistDialog2/-1920.-199.1920.1080/-3840.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588039211338" />
     <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588148043455" />
-    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147773921" />
+    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588315542819" />
     <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1587977136785" />
     <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.23.1920.1057/-1920.0.1920.1080/0.23.1792.1097@-1920.0.1920.1080" timestamp="1587977478232" />
     <state width="686" height="466" key="DebuggerActiveHint" timestamp="1587258173747">
@@ -406,10 +397,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1587247084224" />
-    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2" timestamp="1588148045349">
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2" timestamp="1588315547769">
       <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588148045349" />
-    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147787420" />
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588315547769" />
   </component>
 </project>

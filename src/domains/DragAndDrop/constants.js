@@ -1,5 +1,9 @@
-export const TYPE_BASIC = "Basic";
-export const TYPE_ADVANCED = "Advanced";
+export const TYPE_BASIC = 'Basic';
+export const TYPE_ADVANCED = 'Advanced';
+
+export const ITEM_TYPES = {
+    CARD: 'card'
+}
 
 export const cardItems = [{
     id: "1001",
