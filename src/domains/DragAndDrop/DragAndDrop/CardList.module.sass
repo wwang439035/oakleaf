@@ -1,0 +1,33 @@
+.container
+  grid-column: 3
+  align-self: stretch
+  border: rgba(118, 118, 118, 0.05) solid
+  overflow-y: auto
+
+%card-item
+  font-family: Arial, serif
+  border-bottom: rgba(212, 212, 212, 0.3) solid 1px
+  border-right: rgba(212, 212, 212, 0.3) solid 1px
+  border-radius: 5px
+  margin: 8px 8px
+  padding: 10px
+
+.basicCardItem
+  @extend %card-item
+  border-top: rgba(255, 127, 80, 0.8) solid 1px
+  border-left: #ff7f50 solid 5px
+
+.advancedCardItem
+  @extend %card-item
+  border-top: rgba(32, 178, 170, 0.8) solid 1px
+  border-left: rgba(32, 178, 170, 0.8) solid 5px
+
+.cardItemName
+  font-size: 15px
+  font-weight: bold
+  padding-bottom: 5px
+
+.cardItemBody
+  font-size: 14px
+  font-style: italic
+  color: dimgray

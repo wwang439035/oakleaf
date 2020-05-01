@@ -1,9 +1,30 @@
+body > #root > div {
+  height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-columns: 400px auto;
+}
+
 h2 {
   font-family: Arial, serif;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 h3 {
   font-family: Arial, fantasy;
+}
+
+.discOption {
+  list-style-type: disc;
+}
+.menu {
+  grid-column: 1;
+  overflow: auto;
+  border-right: 5px solid darkorchid;
+}
+
+.mainPanel {
+  grid-column: 2;
 }

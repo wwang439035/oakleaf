@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import styles from './DragAndDrop.module.css';
+import styles from './PlainDragAndDrop.module.css';
 
 //----------------------------------
 //  Slot Functions

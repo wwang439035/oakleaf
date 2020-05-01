@@ -2,7 +2,7 @@
 This project currently includes the following functions:
 1. Drag and Drop Example (Plain JS and ReactJS)
     * Plain JS: public/draganddrop
-    * ReactJS: src/domains/DragAndDrop
+    * ReactJS: src/domains/PlainDragAndDrop
     
 2. Base Component Style & Render Override
 

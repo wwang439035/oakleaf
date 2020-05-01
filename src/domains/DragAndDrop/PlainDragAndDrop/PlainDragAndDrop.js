@@ -8,11 +8,11 @@ import {
     listDragLeave,
     listDragOver,
 } from './EventHandlers';
-import styles from './DragAndDrop.module.css';
+import styles from './PlainDragAndDrop.module.css';
 
 const ICON_DIR = '../images';
 
-export default class DragAndDrop extends Component {
+export default class PlainDragAndDrop extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -47,7 +47,7 @@ export default class DragAndDrop extends Component {
     render() {
         return (
             <Fragment>
-                <h2 className="font middle">Drag and Drop Component Demo</h2>
+                <h2 className="middle">Drag and Drop Component with Plain JS</h2>
                 <br/>
                 <div className={ styles.panel }>
                     <h3>Drop To</h3>

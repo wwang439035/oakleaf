@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ee4c360-4adc-40e7-aaec-61cbb65a04e9" name="Default Changelist" comment="drag and drop element updates">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4ee4c360-4adc-40e7-aaec-61cbb65a04e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DndFactory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Card.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardDropZone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardDropZone.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/ComplexCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/ComplexCard.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Connector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/DragAndDrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/DragAndDrop.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/PlainDragAndDrop/PlainDragAndDrop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/PlainDragAndDrop/PlainDragAndDrop.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/EventHandlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/PlainDragAndDrop/EventHandlers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +34,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Sass File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -41,22 +59,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/domains/DragAndDrop" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop" />
       <recent name="$PROJECT_DIR$/src/domains/DragAndDrop" />
       <recent name="$PROJECT_DIR$/src/domains/StyleOverride" />
       <recent name="$PROJECT_DIR$/resources/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/domains/DragAndDrop/PlainDragAndDrop" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/domains/DragDropList/plain" />
@@ -81,8 +102,8 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="npm.npm start" />
       <item itemvalue="JavaScript Debug.dragdropcomponent.html" />
+      <item itemvalue="npm.npm start" />
     </list>
     <recent_temporary>
       <list>
@@ -108,7 +129,10 @@
       <workItem from="1587364523461" duration="14000" />
       <workItem from="1587924382480" duration="25051000" />
       <workItem from="1588005641456" duration="16545000" />
-      <workItem from="1588093928562" duration="39939000" />
+      <workItem from="1588093928562" duration="40331000" />
+      <workItem from="1588186179990" duration="6447000" />
+      <workItem from="1588268796187" duration="784000" />
+      <workItem from="1588273183329" duration="19701000" />
     </task>
     <task id="LOCAL-00001" summary="drag and drop element updates">
       <created>1587977137066</created>
@@ -250,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588147068256</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Modified README.md">
+      <created>1588147774006</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1588147774006</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Modified README.md">
+      <created>1588148043561</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1588148043561</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +297,8 @@
   <component name="VcsManagerConfiguration">
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="drag and drop element updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="drag and drop element updates" />
+    <MESSAGE value="Modified README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="360" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587257631810">
@@ -271,12 +310,12 @@
     </state>
     <state x="-1241" y="104" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588124481753" />
     <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587929871460" />
-    <state x="-1383" y="-87" key="CommitChangelistDialog2" timestamp="1588147068141">
+    <state x="-1383" y="-87" key="CommitChangelistDialog2" timestamp="1588148043455">
       <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1383" y="-87" key="CommitChangelistDialog2/-1920.-199.1920.1080/-3840.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588039211338" />
-    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588146609481" />
-    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147068141" />
+    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588148043455" />
+    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147773921" />
     <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1587977136785" />
     <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.23.1920.1057/-1920.0.1920.1080/0.23.1792.1097@-1920.0.1920.1080" timestamp="1587977478232" />
     <state width="686" height="466" key="DebuggerActiveHint" timestamp="1587258173747">
@@ -287,21 +326,25 @@
       <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1087" y="245" key="Github.ShareDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147142851" />
-    <state width="1771" height="382" key="GridCell.Tab.0.bottom" timestamp="1587258537306">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1899" height="242" key="GridCell.Tab.0.bottom" timestamp="1588290643789">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
+    <state width="1899" height="242" key="GridCell.Tab.0.bottom/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588290643789" />
     <state width="1771" height="382" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537306" />
-    <state width="1771" height="382" key="GridCell.Tab.0.center" timestamp="1587258537305">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1899" height="242" key="GridCell.Tab.0.center" timestamp="1588290643787">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
+    <state width="1899" height="242" key="GridCell.Tab.0.center/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588290643787" />
     <state width="1771" height="382" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537305" />
-    <state width="1771" height="382" key="GridCell.Tab.0.left" timestamp="1587258537305">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1899" height="242" key="GridCell.Tab.0.left" timestamp="1588290643786">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
+    <state width="1899" height="242" key="GridCell.Tab.0.left/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588290643786" />
     <state width="1771" height="382" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537305" />
-    <state width="1771" height="382" key="GridCell.Tab.0.right" timestamp="1587258537306">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1899" height="242" key="GridCell.Tab.0.right" timestamp="1588290643788">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
+    <state width="1899" height="242" key="GridCell.Tab.0.right/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588290643788" />
     <state width="1771" height="382" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537306" />
     <state width="1771" height="382" key="GridCell.Tab.1.bottom" timestamp="1587258537307">
       <screen x="0" y="0" width="1792" height="1120" />
@@ -363,9 +406,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1587247084224" />
-    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2" timestamp="1588147097730">
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2" timestamp="1588148045349">
       <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
-    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147097730" />
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588148045349" />
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147787420" />
   </component>
 </project>

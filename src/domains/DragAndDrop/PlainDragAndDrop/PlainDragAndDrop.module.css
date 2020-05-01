@@ -4,11 +4,11 @@
 }
 
 .listA {
-    border: lightseagreen solid;
+    border: rgba(32, 178, 170, .5) solid
 }
 
 .listB {
-    border: deeppink solid;
+    border: rgba(255, 20, 147, .5) solid
 }
 
 .icon {
