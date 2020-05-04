@@ -1,31 +1,30 @@
-export const TYPE_BASIC = 'Basic';
-export const TYPE_ADVANCED = 'Advanced';
-
-export const ITEM_TYPES = {
-    CARD: 'card'
+export const CARD_TYPES = {
+    BASIC: 'basic',
+    ADVANCED: 'advanced',
+    IN_CONTAINER: 'in_container'
 }
 
 export const cardItems = [{
     id: "1001",
     name: "City",
     value: ["San Francisco", "Miami", "Fremont", "San Jose", "San Mateo"].sort(),
-    type: TYPE_BASIC
+    type: CARD_TYPES.BASIC
 }, {
     id: "1002",
     name: "State",
     value: ["California", "Florida", "New York", "Washington", "Texas"].sort(),
-    type: TYPE_BASIC
+    type: CARD_TYPES.BASIC
 }, {
     id: "1003",
     name: "Industry",
     value: ["Technology", "Health Care", "Transportation", "Education", "Construction"].sort(),
-    type: TYPE_BASIC
+    type: CARD_TYPES.BASIC
 }, {
     id: "1004",
     name: "Zipcode",
-    value: "",
-    type: TYPE_ADVANCED,
-    items: [{
+    value: ["94404", "94507"],
+    type: CARD_TYPES.ADVANCED,
+    fields: [{
         id: "2001",
         name: "Field 1",
         value: ""
@@ -41,9 +40,9 @@ export const cardItems = [{
 }, {
     id: "1005",
     name: "Phone",
-    value: "",
-    type: TYPE_ADVANCED,
-    items: [{
+    value: "650-123-4567",
+    type: CARD_TYPES.ADVANCED,
+    fields: [{
         id: "2004",
         name: "Field A",
         value: ""
@@ -54,6 +53,24 @@ export const cardItems = [{
     }, {
         id: "2006",
         name: "Field C",
+        value: ""
+    }]
+}, {
+    id: "1006",
+    name: "Country",
+    value: ['USA', 'CHN', 'CAN', 'IND'],
+    type: CARD_TYPES.ADVANCED,
+    fields: [{
+        id: "2005",
+        name: "Field I",
+        value: ""
+    }, {
+        id: "2006",
+        name: "Field III",
+        value: ""
+    }, {
+        id: "2007",
+        name: "Field III",
         value: ""
     }]
 }];

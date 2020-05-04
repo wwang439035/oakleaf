@@ -2,10 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ee4c360-4adc-40e7-aaec-61cbb65a04e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Reducers/Cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/TodosWithRedux.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/actions/todos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/components/AddTodo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/components/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/components/FilterLink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/components/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/components/Link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/components/Todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/components/TodoList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/components/VisibleTodoList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/reducers/todos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/reducers/visibilityFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/TodosWithRedux/thunks/todoThunks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Card.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/Card.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardDropZone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardDropZone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardDropZone.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardDropZone.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/CardList.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardList.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/ComplexCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/ComplexCard.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardContainer.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Connector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/Connector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/DragAndDrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/DragAndDrop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +73,33 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop" />
+      <recent name="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components" />
+      <recent name="$PROJECT_DIR$/src/domains" />
+      <recent name="$PROJECT_DIR$/src/TodosWithRedux" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop" />
       <recent name="$PROJECT_DIR$/src/domains/DragAndDrop" />
       <recent name="$PROJECT_DIR$/src/domains/StyleOverride" />
       <recent name="$PROJECT_DIR$/resources/images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/domains/DragAndDrop/PlainDragAndDrop" />
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/domains/DragDropList/plain" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.dragdropcomponent.html">
@@ -115,7 +151,8 @@
       <workItem from="1588093928562" duration="40331000" />
       <workItem from="1588186179990" duration="6447000" />
       <workItem from="1588268796187" duration="784000" />
-      <workItem from="1588273183329" duration="21097000" />
+      <workItem from="1588273183329" duration="23776000" />
+      <workItem from="1588443674083" duration="36727000" />
     </task>
     <task id="LOCAL-00001" summary="drag and drop element updates">
       <created>1587977137066</created>
@@ -278,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588315542996</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updated react dnd">
+      <created>1588316851440</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1588316851440</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,9 +333,14 @@
     <MESSAGE value="drag and drop element updates" />
     <MESSAGE value="Modified README.md" />
     <MESSAGE value="Create react dnd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create react dnd" />
+    <MESSAGE value="Updated react dnd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated react dnd" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="758" y="459" key="#ESLint" timestamp="1588542036585">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="758" y="459" key="#ESLint/0.0.1792.1120@0.0.1792.1120" timestamp="1588542036585" />
     <state x="360" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587257631810">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -301,12 +350,12 @@
     </state>
     <state x="-1241" y="104" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588124481753" />
     <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587929871460" />
-    <state x="-1383" y="-87" key="CommitChangelistDialog2" timestamp="1588315542819">
+    <state x="-1383" y="-87" key="CommitChangelistDialog2" timestamp="1588316851339">
       <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1383" y="-87" key="CommitChangelistDialog2/-1920.-199.1920.1080/-3840.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588039211338" />
     <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588148043455" />
-    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588315542819" />
+    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588316851339" />
     <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1587977136785" />
     <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.23.1920.1057/-1920.0.1920.1080/0.23.1792.1097@-1920.0.1920.1080" timestamp="1587977478232" />
     <state width="686" height="466" key="DebuggerActiveHint" timestamp="1587258173747">
@@ -317,26 +366,30 @@
       <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1087" y="245" key="Github.ShareDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588147142851" />
-    <state width="1899" height="242" key="GridCell.Tab.0.bottom" timestamp="1588290643789">
-      <screen x="-1920" y="-199" width="1920" height="1080" />
+    <state width="1771" height="252" key="GridCell.Tab.0.bottom" timestamp="1588545770700">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1899" height="242" key="GridCell.Tab.0.bottom/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588290643789" />
-    <state width="1771" height="382" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537306" />
-    <state width="1899" height="242" key="GridCell.Tab.0.center" timestamp="1588290643787">
-      <screen x="-1920" y="-199" width="1920" height="1080" />
+    <state width="1771" height="252" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588545770700" />
+    <state width="1899" height="242" key="GridCell.Tab.0.bottom/0.23.1792.1011@0.23.1792.1011" timestamp="1588411666151" />
+    <state width="1771" height="252" key="GridCell.Tab.0.center" timestamp="1588545770699">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1899" height="242" key="GridCell.Tab.0.center/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588290643787" />
-    <state width="1771" height="382" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537305" />
-    <state width="1899" height="242" key="GridCell.Tab.0.left" timestamp="1588290643786">
-      <screen x="-1920" y="-199" width="1920" height="1080" />
+    <state width="1771" height="252" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588545770699" />
+    <state width="1899" height="242" key="GridCell.Tab.0.center/0.23.1792.1011@0.23.1792.1011" timestamp="1588411666150" />
+    <state width="1771" height="252" key="GridCell.Tab.0.left" timestamp="1588545770699">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1899" height="242" key="GridCell.Tab.0.left/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588290643786" />
-    <state width="1771" height="382" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537305" />
-    <state width="1899" height="242" key="GridCell.Tab.0.right" timestamp="1588290643788">
-      <screen x="-1920" y="-199" width="1920" height="1080" />
+    <state width="1771" height="252" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588545770699" />
+    <state width="1899" height="242" key="GridCell.Tab.0.left/0.23.1792.1011@0.23.1792.1011" timestamp="1588411666150" />
+    <state width="1771" height="252" key="GridCell.Tab.0.right" timestamp="1588545770700">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1899" height="242" key="GridCell.Tab.0.right/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588290643788" />
-    <state width="1771" height="382" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587258537306" />
+    <state width="1771" height="252" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588545770700" />
+    <state width="1899" height="242" key="GridCell.Tab.0.right/0.23.1792.1011@0.23.1792.1011" timestamp="1588411666150" />
     <state width="1771" height="382" key="GridCell.Tab.1.bottom" timestamp="1587258537307">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -393,14 +446,18 @@
       <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1174" y="50" key="RollbackChangesDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588107945412" />
-    <state x="397" y="199" key="SettingsEditor" timestamp="1587247084224">
+    <state x="397" y="199" key="SettingsEditor" timestamp="1588464034564">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1587247084224" />
-    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2" timestamp="1588315547769">
+    <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1588464034564" />
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2" timestamp="1588316853645">
       <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588148045349" />
-    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588315547769" />
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588316853645" />
+    <state x="597" y="192" width="1064" height="735" key="find.popup" timestamp="1588576107014">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="597" y="192" width="1064" height="735" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1588576107014" />
   </component>
 </project>
