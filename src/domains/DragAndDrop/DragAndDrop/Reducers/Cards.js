@@ -23,13 +23,16 @@ export default function cards(state = initialState, action) {
 
 const addToCardDropZone = function (state, {card, index}) {
     const data = state.get('data').toJS();
-    data.splice(index || data.length, 0, card);
+    index = index !== null && index !== undefined ? index : data.length;
+    data.splice(index, 0, card);
     return state.set('data', fromJS(data));
 }
 
 const addToCardContainer = function (state, {containerIndex, card, index}) {
+    console.log(containerIndex);
     const children = state.getIn(['data', containerIndex, 'children']).toJS();
-    children.splice(index || children.length, 0, card)
+    index = index !== null && index !== undefined ? index : children.length;
+    children.splice(index, 0, card)
     return state.setIn(['data', containerIndex, 'children'], fromJS(children));
 }
 

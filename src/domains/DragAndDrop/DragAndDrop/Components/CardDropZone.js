@@ -3,12 +3,12 @@ import {DropTarget} from "react-dnd";
 import PropTypes from "prop-types";
 import {connect} from 'react-redux';
 import {List} from "immutable";
-import Card from "./Card";
+import cardFactory from "./Card";
 import CardContainer from "./CardContainer";
 import {CARD_TYPES} from "../../constants";
 import {addToCardContainer, addToCardDropZone, reorderCardsOrContainers} from "../actions";
 import styles from "./CardDropZone.module.sass"
-import classNames from "classnames";
+import {buildAdvancedCard, buildInContainerCard} from "../utils";
 
 const mapStateToProps = (state, {id, containerIndex}) => ({
     children: id
@@ -36,25 +36,21 @@ class CardDropZone extends Component {
     }
 
     renderChildren() {
-        const {containerIndex, children} = this.props;
+        const {id, containerIndex, children} = this.props;
+        const Card = cardFactory(id !== undefined ? CARD_TYPES.IN_CONTAINER : CARD_TYPES.BASIC);
         return children.map((child, index) => {
             let CardClass = Card;
             if (child.type === CARD_TYPES.ADVANCED) {
                 CardClass = CardContainer;
             }
             return (
-                <div key={`${child.id}_${index}`}>
-                    <div className={classNames({
-                        [styles.topContainerGutter]: child.type !== CARD_TYPES.IN_CONTAINER,
-                        [styles.topInContainerGutter]: child.type === CARD_TYPES.IN_CONTAINER
-                    })}/>
-                    <CardClass
-                        id={child.id}
-                        index={index}
-                        containerIndex={containerIndex}
-                        {...child}
-                    />
-                </div>
+                <CardClass
+                    id={child.id}
+                    key={`${child.id}_${index}`}
+                    index={index}
+                    containerIndex={containerIndex}
+                    {...child}
+                />
             );
         });
     }
@@ -88,22 +84,20 @@ const spec = {
         let card = Object.assign({}, monitor.getItem());
         if (props.id) {
             if (card.type === CARD_TYPES.ADVANCED) {
-                card.type = CARD_TYPES.IN_CONTAINER;
-                card.containerId = props.id;
+                buildInContainerCard(card, props.id);
                 props.dispatch(addToCardContainer(props.containerIndex, card));
             }
         } else if (card.type !== CARD_TYPES.IN_CONTAINER) {
             if (card.index !== undefined) {
-                props.dispatch(reorderCardsOrContainers(card.index, props.children.length - 1, props.containerIndex));
+                props.dispatch(reorderCardsOrContainers(
+                    card.index,
+                    props.children.length - 1,
+                    props.containerIndex)
+                );
                 return;
             }
             if (card.type === CARD_TYPES.ADVANCED) {
-                const containerId = `sl_${card.id}`;
-                const childCard = Object.assign({}, card);
-                childCard.type = CARD_TYPES.IN_CONTAINER;
-                childCard.containerId = containerId;
-                card.id = containerId;
-                card.children = [childCard];
+                buildAdvancedCard(card);
             }
             props.dispatch(addToCardDropZone(card));
         }

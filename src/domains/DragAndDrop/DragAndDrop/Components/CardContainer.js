@@ -6,7 +6,8 @@ import {DragSource, DropTarget} from "react-dnd";
 import styles from "./CardContainer.module.sass"
 import cardDropZoneFactory from "./CardDropZone";
 import {CARD_TYPES} from "../../constants";
-import {removeCardOrContainer, reorderCardsOrContainers} from "../actions";
+import {addToCardDropZone, removeCardOrContainer, reorderCardsOrContainers} from "../actions";
+import {buildAdvancedCard} from "../utils";
 
 const mapStateToProps = (state, {index}) => ({
     children: (state.getIn(['DragAndDrop', 'cards', 'data', index, 'children']) || List()).toJS()
@@ -59,20 +60,28 @@ class CardContainer extends Component {
         return valueFields;
     }
 
-    render() {
-        const {id, index, connectDragSource, connectDropTarget} = this.props;
+    renderDraggableCardContainer = function() {
+        const {id, index, connectDragSource} = this.props;
         const CardDropZone = cardDropZoneFactory('cardContainer');
+        return connectDragSource(
+            <div className={styles.container}
+                 onClick={() => this.handleClick()}
+            >
+                {this.renderHeader()}
+                {this.renderFields()}
+                <CardDropZone className={styles.cardDropZone} id={id} containerIndex={index}/>
+            </div>
+        );
+    }
+
+    render() {
+        const {connectDropTarget} = this.props;
         return connectDropTarget(
-            connectDragSource(
-                <div className={styles.container}
-                     onClick={() => this.handleClick()}
-                >
-                    {this.renderHeader()}
-                    {this.renderFields()}
-                    <CardDropZone className={styles.cardDropZone} id={id} containerIndex={index}/>
-                </div>
-            )
-        )
+            <div>
+                <div className={styles.topGutter}/>
+                {this.renderDraggableCardContainer()}
+            </div>
+        );
     }
 }
 
@@ -100,9 +109,14 @@ const dropSpec = {
 
         let movedCard = Object.assign({}, monitor.getItem());
         if (movedCard.containerIndex === undefined && props.containerIndex === undefined
-            && movedCard.index !== props.index) {
+            && movedCard.index !== undefined && movedCard.index !== props.index) {
             props.dispatch(reorderCardsOrContainers(movedCard.index, props.index));
             console.log(props);
+        } else if(movedCard.index === undefined && props.index !== undefined) {
+            if (movedCard.type === CARD_TYPES.ADVANCED) {
+                buildAdvancedCard(movedCard);
+            }
+            props.dispatch(addToCardDropZone(movedCard, props.index));
         }
     }
 };

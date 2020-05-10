@@ -6,10 +6,13 @@ import PropTypes from "prop-types";
 import {CARD_TYPES} from "../../constants";
 import styles from "./Card.module.sass"
 import {
+    addToCardContainer,
+    addToCardDropZone,
     removeCardFromContainer,
     removeCardOrContainer,
     reorderCardsOrContainers
 } from "../actions";
+import {buildAdvancedCard, buildInContainerCard} from "../utils";
 
 class Card extends Component {
     static propTypes = {
@@ -67,20 +70,31 @@ class Card extends Component {
         }
     }
 
+    renderDraggableCard = function () {
+        const {type, connectDragSource} = this.props;
+        return connectDragSource(
+            <div ref={this.ref} className={classNames({
+                [styles.container]: type === CARD_TYPES.BASIC,
+                [styles.inContainer]: type === CARD_TYPES.IN_CONTAINER
+            })}
+                 onClick={this.handleClick.bind(this)}
+            >
+                {this.renderName()}
+                {this.renderBody()}
+            </div>
+        )
+    }
+
     render() {
-        const {type, connectDragSource, connectDropTarget} = this.props;
+        const {type, connectDropTarget} = this.props;
         return connectDropTarget(
-            connectDragSource(
-                <div ref={this.ref} className={classNames({
-                    [styles.container]: type === CARD_TYPES.BASIC,
-                    [styles.inContainer]: type === CARD_TYPES.IN_CONTAINER
-                })}
-                     onClick={this.handleClick.bind(this)}
-                >
-                    {this.renderName()}
-                    {this.renderBody()}
-                </div>
-            )
+            <div>
+                <div className={classNames({
+                    [styles.topContainerGutter]: type !== CARD_TYPES.IN_CONTAINER,
+                    [styles.topInContainerGutter]: type === CARD_TYPES.IN_CONTAINER
+                })}/>
+                {this.renderDraggableCard()}
+            </div>
         )
     }
 }
@@ -103,9 +117,18 @@ const dropSpec = {
         let movedCard = Object.assign({}, monitor.getItem());
         if (((movedCard.containerIndex !== undefined && movedCard.containerIndex === props.containerIndex)
             || (movedCard.containerIndex === undefined && props.containerIndex === undefined))
-            && movedCard.index !== props.index) {
+            && movedCard.index !== undefined && props.index !== undefined && movedCard.index !== props.index) {
             props.dispatch(reorderCardsOrContainers(movedCard.index, props.index, props.containerIndex));
-            console.log(props);
+        } else if (movedCard.index === undefined && props.index !== undefined) {
+            if (props.type === CARD_TYPES.IN_CONTAINER && movedCard.type === CARD_TYPES.ADVANCED) {
+                buildInContainerCard(movedCard, props.id)
+                props.dispatch(addToCardContainer(props.containerIndex, movedCard, props.index));
+            } else if (props.type !== CARD_TYPES.IN_CONTAINER) {
+                if (movedCard.type === CARD_TYPES.ADVANCED) {
+                    buildAdvancedCard(movedCard);
+                }
+                props.dispatch(addToCardDropZone(movedCard, props.index));
+            }
         }
     }
 };
@@ -122,11 +145,13 @@ const dropCollect = (connect, monitor) => {
     }
 };
 
-export default connect()(
-    DropTarget(
-        [CARD_TYPES.BASIC, CARD_TYPES.ADVANCED],
-        dropSpec,
-        dropCollect)(
-        DragSource(CARD_TYPES.BASIC, dragSpec, dragCollect)(Card)
-    )
-);
+export default function (type) {
+    return connect()(
+        DropTarget(
+            [CARD_TYPES.BASIC, CARD_TYPES.ADVANCED, CARD_TYPES.IN_CONTAINER],
+            dropSpec,
+            dropCollect)(
+            DragSource(type, dragSpec, dragCollect)(Card)
+        )
+    );
+}
