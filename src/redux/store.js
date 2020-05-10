@@ -1,26 +1,25 @@
 /*
-import {applyMiddleware, createStore, compose} from 'redux'
 import {createLogger} from 'redux-logger'
-import thunk from 'redux-thunk'
 import freeze from 'redux-freeze'
-import _ from 'lodash'
  */
-import {createStore} from 'redux'
+import {applyMiddleware, createStore, compose} from 'redux'
+import thunk from 'redux-thunk'
 import rootReducer from './rootReducer'
+import _ from 'lodash'
 
 let storeInitialized = false;
 let store = null;
 
 if (!storeInitialized) {
     storeInitialized = true;
+    const middlewares = _.compact([thunk]);
+    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
     /*const logger = createLogger();
     const middlewares = _.compact([thunk, freeze, logger]);
-    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
     */
     store = createStore(
         rootReducer,
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-        //composeEnhancers(applyMiddleware(...middlewares))
+        composeEnhancers(applyMiddleware(...middlewares))
     );
 }
 

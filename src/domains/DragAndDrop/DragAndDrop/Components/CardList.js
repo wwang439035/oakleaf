@@ -35,7 +35,6 @@ export default class CardList extends Component {
 const spec = {
     beginDrag(props, monitor, component) {
         const item = props;
-        console.log(props);
         return item;
     }
 };

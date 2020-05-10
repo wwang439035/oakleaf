@@ -12,12 +12,12 @@ export const cardItems = [{
 }, {
     id: "1002",
     name: "State",
-    value: ["California", "Florida", "New York", "Washington", "Texas"].sort(),
+    value: ["California", "Florida", "New York", "Washington"].sort(),
     type: CARD_TYPES.BASIC
 }, {
     id: "1003",
     name: "Industry",
-    value: ["Technology", "Health Care", "Transportation", "Education", "Construction"].sort(),
+    value: ["Technology", "Education", "Construction"].sort(),
     type: CARD_TYPES.BASIC
 }, {
     id: "1004",
@@ -31,10 +31,6 @@ export const cardItems = [{
     }, {
         id: "2002",
         name: "Field 2",
-        value: ""
-    }, {
-        id: "2003",
-        name: "Field 3",
         value: ""
     }]
 }, {
@@ -50,10 +46,6 @@ export const cardItems = [{
         id: "2005",
         name: "Field B",
         value: ""
-    }, {
-        id: "2006",
-        name: "Field C",
-        value: ""
     }]
 }, {
     id: "1006",
@@ -66,10 +58,6 @@ export const cardItems = [{
         value: ""
     }, {
         id: "2006",
-        name: "Field III",
-        value: ""
-    }, {
-        id: "2007",
         name: "Field III",
         value: ""
     }]

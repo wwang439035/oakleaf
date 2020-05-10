@@ -3,6 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="4ee4c360-4adc-40e7-aaec-61cbb65a04e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/Card.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/Card.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardContainer.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardContainer.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardDropZone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardDropZone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardDropZone.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardDropZone.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Components/CardList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Reducers/Cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/Reducers/Cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/DragAndDrop/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/DragAndDrop/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/DragAndDrop/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +131,10 @@
       <workItem from="1588268796187" duration="784000" />
       <workItem from="1588273183329" duration="23776000" />
       <workItem from="1588443674083" duration="36979000" />
-      <workItem from="1588610238392" duration="915000" />
+      <workItem from="1588610238392" duration="3987000" />
+      <workItem from="1588810363441" duration="20000" />
+      <workItem from="1588962741974" duration="924000" />
+      <workItem from="1589046056084" duration="23210000" />
     </task>
     <task id="LOCAL-00001" summary="drag and drop element updates">
       <created>1587977137066</created>
@@ -296,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588581516248</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Updated react dnd">
+      <created>1588626275395</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588626275395</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,12 +346,12 @@
     </state>
     <state x="-1241" y="104" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588124481753" />
     <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587929871460" />
-    <state x="501" y="116" key="CommitChangelistDialog2" timestamp="1588581515958">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="-1383" y="-87" key="CommitChangelistDialog2" timestamp="1588626275242">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1383" y="-87" key="CommitChangelistDialog2/-1920.-199.1920.1080/-3840.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588039211338" />
     <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588148043455" />
-    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588316851339" />
+    <state x="-1383" y="-87" key="CommitChangelistDialog2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588626275242" />
     <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.0.1920.1080/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1587977136785" />
     <state x="-1383" y="112" key="CommitChangelistDialog2/-3840.23.1920.1057/-1920.0.1920.1080/0.23.1792.1097@-1920.0.1920.1080" timestamp="1587977478232" />
     <state x="501" y="116" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1588581515958" />
@@ -425,15 +447,19 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1588464034564" />
-    <state x="523" y="277" key="Vcs.Push.Dialog.v2" timestamp="1588581518692">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2" timestamp="1588626279722">
+      <screen x="-1920" y="-199" width="1920" height="1080" />
     </state>
     <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-176.1920.1057/-1920.-199.1920.1080/0.23.1792.1097@-1920.-199.1920.1080" timestamp="1588148045349" />
-    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588316853645" />
+    <state x="-1360" y="68" key="Vcs.Push.Dialog.v2/-3840.-199.1920.1080/-1920.-199.1920.1080/0.0.1792.1120@-1920.-199.1920.1080" timestamp="1588626279722" />
     <state x="523" y="277" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1588581518692" />
-    <state x="597" y="192" width="1064" height="735" key="find.popup" timestamp="1588576107014">
+    <state x="597" y="192" width="1064" height="735" key="find.popup" timestamp="1589076931777">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="597" y="192" width="1064" height="735" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1588576107014" />
+    <state x="597" y="192" width="1064" height="735" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1589076931777" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1588703828552">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1588703828552" />
   </component>
 </project>

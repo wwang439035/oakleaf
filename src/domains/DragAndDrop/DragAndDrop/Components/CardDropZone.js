@@ -2,22 +2,26 @@ import React, {Component} from "react";
 import {DropTarget} from "react-dnd";
 import PropTypes from "prop-types";
 import {connect} from 'react-redux';
-import {Map} from "immutable";
+import {List} from "immutable";
 import Card from "./Card";
-import ComplexCard from "./CardContainer";
+import CardContainer from "./CardContainer";
 import {CARD_TYPES} from "../../constants";
-import {addToCardContainer, addToCardDropZone} from "../actions";
+import {addToCardContainer, addToCardDropZone, reorderCardsOrContainers} from "../actions";
 import styles from "./CardDropZone.module.sass"
+import classNames from "classnames";
 
-const mapStateToProps = (state, {id}) => ({
-    children: id ? (state.getIn(['DragAndDrop', 'cards', id, 'children']) || Map()).toJS() : state.getIn(['DragAndDrop', 'cards']).toJS()
+const mapStateToProps = (state, {id, containerIndex}) => ({
+    children: id
+        ? (state.getIn(['DragAndDrop', 'cards', 'data', containerIndex, 'children']) || List()).toJS()
+        : state.getIn(['DragAndDrop', 'cards', 'data']).toJS()
 })
 
 class CardDropZone extends Component {
     static propTypes = {
         id: PropTypes.string,
+        containerIndex: PropTypes.number,
         className: PropTypes.string,
-        children: PropTypes.object,
+        children: PropTypes.array,
         useEmpty: PropTypes.bool,
         dispatch: PropTypes.func
     }
@@ -32,18 +36,26 @@ class CardDropZone extends Component {
     }
 
     renderChildren() {
-        const {children} = this.props;
-        return Object.values(children).map((child, index) => {
+        const {containerIndex, children} = this.props;
+        return children.map((child, index) => {
             let CardClass = Card;
             if (child.type === CARD_TYPES.ADVANCED) {
-                CardClass = ComplexCard;
+                CardClass = CardContainer;
             }
-            return (<CardClass
-                id={child.id}
-                key={child.id}
-                index={index + 1}
-                {...child}
-            />);
+            return (
+                <div key={`${child.id}_${index}`}>
+                    <div className={classNames({
+                        [styles.topContainerGutter]: child.type !== CARD_TYPES.IN_CONTAINER,
+                        [styles.topInContainerGutter]: child.type === CARD_TYPES.IN_CONTAINER
+                    })}/>
+                    <CardClass
+                        id={child.id}
+                        index={index}
+                        containerIndex={containerIndex}
+                        {...child}
+                    />
+                </div>
+            );
         });
     }
 
@@ -73,27 +85,25 @@ const spec = {
             return;
         }
 
-        let card = monitor.getItem();
+        let card = Object.assign({}, monitor.getItem());
         if (props.id) {
             if (card.type === CARD_TYPES.ADVANCED) {
-                const copyCard = Object.assign({}, card);
-                copyCard.type = CARD_TYPES.IN_CONTAINER;
-                copyCard.containerId = props.id;
-                delete copyCard.fields;
-                props.dispatch(addToCardContainer(props.id, copyCard));
+                card.type = CARD_TYPES.IN_CONTAINER;
+                card.containerId = props.id;
+                props.dispatch(addToCardContainer(props.containerIndex, card));
             }
         } else if (card.type !== CARD_TYPES.IN_CONTAINER) {
+            if (card.index !== undefined) {
+                props.dispatch(reorderCardsOrContainers(card.index, props.children.length - 1, props.containerIndex));
+                return;
+            }
             if (card.type === CARD_TYPES.ADVANCED) {
-                const newCard = {};
-                newCard.id = Date.now().toString();
-                newCard.type = CARD_TYPES.ADVANCED;
-                newCard.fields = card.fields;
-                const copyCard = Object.assign({}, card);
-                copyCard.type = CARD_TYPES.IN_CONTAINER;
-                copyCard.containerId = newCard.id;
-                delete copyCard.fields;
-                newCard.children = {[copyCard.id]: copyCard};
-                card = newCard;
+                const containerId = `sl_${card.id}`;
+                const childCard = Object.assign({}, card);
+                childCard.type = CARD_TYPES.IN_CONTAINER;
+                childCard.containerId = containerId;
+                card.id = containerId;
+                card.children = [childCard];
             }
             props.dispatch(addToCardDropZone(card));
         }

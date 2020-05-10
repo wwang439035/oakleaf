@@ -1,6 +1,8 @@
-import {fromJS, Map} from 'immutable';
+import {fromJS} from 'immutable';
 
-const initialState = Map();
+const initialState = fromJS({
+    data: []
+});
 
 export default function cards(state = initialState, action) {
     switch (action.type) {
@@ -12,23 +14,44 @@ export default function cards(state = initialState, action) {
             return removeCardOrContainer(state, action);
         case 'removeCardFromContainer':
             return removeCardFromContainer(state, action);
+        case 'reorderCardsOrContainers':
+            return reorderCardsOrContainers(state, action);
         default:
             return state;
     }
 }
 
-const addToCardDropZone = function (state, {card}) {
-    return state.set(card.id, fromJS(card));
+const addToCardDropZone = function (state, {card, index}) {
+    const data = state.get('data').toJS();
+    data.splice(index || data.length, 0, card);
+    return state.set('data', fromJS(data));
 }
 
-const addToCardContainer = function (state, {id, card}) {
-    return state.setIn([id, 'children', card.id], fromJS(card));
+const addToCardContainer = function (state, {containerIndex, card, index}) {
+    const children = state.getIn(['data', containerIndex, 'children']).toJS();
+    children.splice(index || children.length, 0, card)
+    return state.setIn(['data', containerIndex, 'children'], fromJS(children));
 }
 
-const removeCardOrContainer = function (state, {id}) {
-    return state.delete(id);
+const removeCardOrContainer = function (state, {index}) {
+    return state.deleteIn(['data', index]);
 }
 
-const removeCardFromContainer = function (state, {containerId, cardId}) {
-    return state.deleteIn([containerId, 'children', cardId]);
+const removeCardFromContainer = function (state, {containerIndex, index}) {
+    return state.deleteIn(['data', containerIndex, 'children', index]);
+}
+
+const reorderCardsOrContainers = function (state, {preIndex, newIndex, containerIndex}) {
+    let data;
+    if (containerIndex !== undefined) {
+        data = state.getIn(['data', containerIndex, 'children']).toJS();
+    } else {
+        data = state.get('data').toJS();
+    }
+    const moved = data.splice(preIndex, 1)[0];
+    data.splice(newIndex, 0, moved);
+    if (containerIndex !== undefined) {
+        return state.setIn(['data', containerIndex, 'children'], fromJS(data));
+    }
+    return state.set('data', fromJS(data));
 }

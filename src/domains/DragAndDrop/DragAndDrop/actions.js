@@ -1,21 +1,30 @@
-export const addToCardDropZone = card => ({
+export const addToCardDropZone = (card, index) => ({
     type: 'addToCardDropZone',
     card,
+    index
 })
 
-export const addToCardContainer = (id, card) => ({
+export const addToCardContainer = (containerIndex, card, index) => ({
     type: 'addToCardContainer',
-    id,
+    containerIndex,
     card,
+    index
 })
 
-export const removeCardOrContainer = id => ({
+export const removeCardOrContainer = index => ({
     type: 'removeCardOrContainer',
-    id,
+    index
 })
 
-export const removeCardFromContainer = (containerId, cardId) => ({
+export const removeCardFromContainer = (containerIndex, index) => ({
     type: 'removeCardFromContainer',
-    containerId,
-    cardId
+    containerIndex,
+    index
+})
+
+export const reorderCardsOrContainers = (preIndex, newIndex, containerIndex) => ({
+    type: 'reorderCardsOrContainers',
+    preIndex,
+    newIndex,
+    containerIndex
 })
